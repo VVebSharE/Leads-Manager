@@ -1,0 +1,307 @@
+
+a {
+  text-decoration: none;
+}
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+/* 
+#table_con::-webkit-scrollbar {
+  display: none;
+} */
+h1 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0%;
+}
+#table {
+  border-collapse: collapse;
+  /* margin-bottom: 20px; */
+  width: max-content;
+}
+ @media screen and (min-width: 1000px) {
+  #table {
+    width: 100%;
+  }
+}
+  
+
+#table_con{
+  position: relative;
+  overflow: auto;
+  height:71vh; 
+}
+
+body {
+  margin: 0%;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+thead tr{
+  background-color: white;
+  width: auto;
+
+  position: sticky;
+  top: 0px;
+}
+
+tr{
+/*   
+  border-width: 0px 0 1px 0; 
+border-color: #000;
+border-style: solid; */
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+table tr:hover {
+  background-color: #FAF3F3;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-family: Montserrat;
+font-size: 15px;
+font-weight: 500;
+
+padding-left: 20px;
+}
+#status_column{
+  position: relative;
+}
+td {
+padding-left: 20px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+
+
+}
+
+.pad_right{
+  padding-right: 20px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+#top {
+  /* position:sticky;
+  top: 0%;
+  left: 0%; */
+
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content:space-between;
+  background-color: white;
+}
+
+/* alerts */
+#alert {
+  color: red;
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+/* for status tabs */
+.active {
+  color: #119B05;
+  
+}
+.hot {
+  color: #E11C28;
+
+}
+.follow{
+  color: #F38015;
+
+}
+.dead {
+  color: #333131;
+  
+}
+
+
+
+
+.tag {
+  /* border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  padding: 10px; */
+  font-family: Montserrat;
+font-size: 15px;
+font-weight: 600;
+
+  /* margin: auto; */
+}
+.tag:hover{
+  
+  cursor: pointer;
+}
+
+.select_status{
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.desc {
+  max-width: 150px;
+  max-height: 58px;
+  overflow:hidden;
+}
+.desc:hover{
+  cursor: pointer;
+}
+.note {
+  max-width: 150px;
+  height: auto;
+  overflow-wrap: break-word;
+}
+
+/* for filter search and add lead */
+svg {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.top_con {
+  /* position:sticky;
+  top: 70px;
+  right: 0%; */
+
+  
+
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: sans-serif;
+  background: #FAF3F3;
+}
+.left{
+  width: 100%;
+}
+#search {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  /* width: 200px;
+  transition: width 0.5s; */
+}
+#in_search {
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  color: #9D9191;
+width: 100%;
+
+  font-family: Montserrat;
+font-size: 20px;
+font-weight: 300;
+
+
+}
+
+/* 
+#search:focus-within{
+ width: 100%;
+} */
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+#filter {
+  margin-right: 20px;
+  display: flex;
+}
+
+#filter_icon:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+#filter_by {
+  display: none;
+  padding: 0px 10px;
+
+  outline: none;
+  border: none;
+  color: #9D9191;
+
+
+  font-family: Montserrat;
+font-size: 20px;
+font-weight: 300;
+  /* outline: 2px solid green;
+  padding: 5px; */
+}
+#filter_by select {
+  background-color: #ffffff;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: none;
+  font-family: sans-serif;
+  color: #6f809e;
+  padding: 5px;
+}
+#add_lead {
+  font-family: Montserrat;
+font-size: 15px;
+font-weight: 500;
+  padding-left: 12px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: #2223DC;
+  color: white;
+}
+
+
+
+.action_icons{
+  display: flex;
+
+}
+.action_icons svg{
+  margin-right: 15px;
+}
+.action_mid_icon{
+  margin-top: 8px;
+}
+.action_last_icon{
+  margin-top: 8px;
+}
+#dis_none{
+  display: none;
+}

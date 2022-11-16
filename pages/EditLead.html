@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/lead.css">
+</head>
+
+<body class="edit_container">
+  <div class="back">
+    <a href="/pages/dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+      <g>
+      <path fill="none" d="M0 0h24v24H0z"></path>
+      <path d="M6.535 3H21a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6.535a1 1 0 0 1-.832-.445l-5.333-8a1 1 0 0 1 0-1.11l5.333-8A1 1 0 0 1 6.535 3zM13 10.586l-2.828-2.829-1.415 1.415L11.586 12l-2.829 2.828 1.415 1.415L13 13.414l2.828 2.829 1.415-1.415L14.414 12l2.829-2.828-1.415-1.415L13 10.586z" fill="#cc0000"></path>
+      </g>
+      </svg>
+      </a>
+  </div>
+  <div class="container1">
+    <div class="sub1">
+      <div class="login__field">
+        <label for="lead_url" class="label_text">Lead URL: </label> <br>
+        <input type="text" class="login__input" id="url" placeholder="Lead URL" />
+      </div>
+      <div class="login__field">
+        <label for="job-title" class="label_text">Job Title: </label><br>
+        <input type="textarea" name="job-title" id="job-title" class="login__input" placeholder="Job Title" />
+      </div>
+      
+      <div class="login__field">
+        <label for="price" class="label_text">Price: </label> <br>
+        <input type="text" class="login__input" id="price" placeholder="Price" />
+      </div>
+    </div>
+    <div class="sub2">
+      <div class="login__field">
+        <label for="account" class="label_text">Upwork Id:</label> <br>
+        <select name="Account_id" id="account_id">
+          <option value="0">Select Upwork Id</option>
+        </select>
+      </div>
+      <div class="login__field">
+        <label for="country" class="label_text">Country: </label> <br>
+        <select id="country" name="country">
+          <option value="0">Select Country</option>
+        </select>
+      </div>
+      <div class="login__field">
+        <label for="status" class="label_text">Status: </label> <br>
+        <select name="status" id="status" >
+          <option value="0">Select status</option>
+          <option value="Hot">Hot</option>
+          <option value="Follow up">Warm</option>
+          <option value="Dead">Dead</option>
+          <option value="Active">Active</option>
+        </select>
+      </div>
+    </div>
+    <div class="sub3">
+      <div class="login__field">
+        <label for="tech_stack" class="label_text">TechStack:</label> <br>
+        <input list="tech_stack" id="tech_stack_input" name="tech_stack" placeholder="select or enter techstack"/>
+        <datalist name="" id="tech_stack">
+    
+        </datalist>
+      </div>
+      <div class="login__field">
+        <label for="tags" class="label_text">Tags: </label> <br>
+        <input type="textarea" name="tags" id="tags" class="login__input" placeholder="Tags" />
+      </div>
+    </div>
+  </div>
+
+  <div class="login__field">
+    <label for="note" class="label_text" style="padding-left:10px;">Notes: </label> <br>
+    <textarea name="note" id="note" class="login__input"></textarea>
+  </div>
+
+
+  <div class="login__field">
+    <label for="desc" class="label_text" style="padding-left:10px;">Description: </label> <br>
+    <textarea name="desc" id="desc" class="login__input"></textarea>
+  </div>
+  <div class="btn">
+    <button  type="button" class="button login__submit" id="btn1" >Update</button>
+  </div>
+  
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/send_data.js"></script>
+    <script src="/scripts/editlead.js"></script>
+    <script type= "text/javascript" src = "/scripts/countries.js"></script>
+</body>
+
+</html>
